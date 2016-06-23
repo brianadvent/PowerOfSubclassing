@@ -12,6 +12,7 @@
 		86FFEE021D1C309F00C0531A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FFEE001D1C309F00C0531A /* Main.storyboard */; };
 		86FFEE041D1C309F00C0531A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FFEE031D1C309F00C0531A /* Assets.xcassets */; };
 		86FFEE071D1C309F00C0531A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FFEE051D1C309F00C0531A /* LaunchScreen.storyboard */; };
+		86FFEE0F1D1C323100C0531A /* SpecialImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FFEE0E1D1C323100C0531A /* SpecialImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		86FFEE031D1C309F00C0531A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86FFEE061D1C309F00C0531A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86FFEE081D1C309F00C0531A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86FFEE0E1D1C323100C0531A /* SpecialImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				86FFEDFC1D1C309F00C0531A /* AppDelegate.swift */,
 				86FFEDFE1D1C309F00C0531A /* ViewController.swift */,
+				86FFEE0E1D1C323100C0531A /* SpecialImageView.swift */,
 				86FFEE001D1C309F00C0531A /* Main.storyboard */,
 				86FFEE031D1C309F00C0531A /* Assets.xcassets */,
 				86FFEE051D1C309F00C0531A /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				86FFEDFF1D1C309F00C0531A /* ViewController.swift in Sources */,
 				86FFEDFD1D1C309F00C0531A /* AppDelegate.swift in Sources */,
+				86FFEE0F1D1C323100C0531A /* SpecialImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

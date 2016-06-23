@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Subclassing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,50 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="AUy-DI-AtP" customClass="SpecialImageView" customModule="Subclassing" customModuleProvider="target">
+                                <rect key="frame" x="250" y="198" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4Fp-2s-S47"/>
+                                    <constraint firstAttribute="height" constant="100" id="aQ3-2i-kbg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="8Uy-AP-srJ" customClass="SpecialImageView" customModule="Subclassing" customModuleProvider="target">
+                                <rect key="frame" x="250" y="338" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WIB-7w-8gF"/>
+                                    <constraint firstAttribute="width" constant="100" id="v2S-bB-CvF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="KHR-wU-uiO" customClass="SpecialImageView" customModule="Subclassing" customModuleProvider="target">
+                                <rect key="frame" x="250" y="54" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="D7Y-oF-2Jp"/>
+                                    <constraint firstAttribute="height" constant="100" id="YMp-o5-gdx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AUy-DI-AtP" firstAttribute="top" secondItem="KHR-wU-uiO" secondAttribute="bottom" constant="44" id="Ano-mf-Ler"/>
+                            <constraint firstItem="KHR-wU-uiO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="TEK-4l-BCq"/>
+                            <constraint firstItem="8Uy-AP-srJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bRR-Dk-dC5"/>
+                            <constraint firstItem="8Uy-AP-srJ" firstAttribute="top" secondItem="AUy-DI-AtP" secondAttribute="bottom" constant="40" id="lk4-5H-U0I"/>
+                            <constraint firstItem="AUy-DI-AtP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uZj-ss-2mJ"/>
+                            <constraint firstItem="KHR-wU-uiO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zc3-3E-JHw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="specialImageView1" destination="KHR-wU-uiO" id="ai9-Bo-LWL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="3888" height="2592"/>
+        <image name="2" width="4000" height="2667"/>
+        <image name="3" width="4000" height="2667"/>
+    </resources>
 </document>
